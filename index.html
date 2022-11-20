@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+        
+            padding: 50px;
+            margin: 100px;
+        }
+        
+        button{
+            width: 150px;
+            height: 40px;
+        }
+
+    </style>
 </head>
 <body>
-    <p id="p1"></p>
+   <div class="box">
+        <p id="p1"></p>
     <button onclick="myFunction()">click</button>
+    </div>
     <script>
    function  myFunction(){
     document.getElementById("p1").innerHTML="This is Paragraph"
